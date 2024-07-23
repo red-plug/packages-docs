@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#content h1 {
+    @apply text-3xl md:text-5xl font-semibold mb-6;
+}
+
+#content h2 {
+    @apply text-xl md:text-3xl mb-4;
+}
+
+#content h3 {
+    @apply text-lg md:text-2xl font-semibold mb-5;
+}
+
+#content h4 {
+    @apply text-lg md:text-2xl mb-5;
+}
+
+#content h5 {
+    @apply text-lg md:text-xl font-semibold mb-4;
+}
+
+#content h6 {
+    @apply text-lg md:text-xl mb-4;
+}
+
+#content p {
+    @apply mb-6 md:mb-8;
+}
+
+#content ul {
+    @apply mb-6 md:mb-8 ps-4;
+}
+
+#content ul > li {
+    @apply list-disc list-inside;
+}
+
+#content p > a {
+    @apply link link-secondary;
+}
+
+#content li > a {
+    @apply link link-secondary;
+}
+
+#content .mockup-code > pre {
+    @apply ps-12;
+}
+
+#content p > code {
+    @apply badge badge-sm;
+}
+
+#content table {
+    @apply table table-zebra;
+}

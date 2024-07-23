@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@nuxt/content": "^2.13.1",
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "daisyui": "^4.12.10",
+    "nuxt": "^3.12.4",
+    "nuxt-lodash": "^2.5.3"
+  }
+}
