@@ -57,3 +57,11 @@
 #content table {
     @apply table table-zebra;
 }
+
+#content blockquote {
+    @apply ps-4 py-2 my-4 border-s-4 border-base-300 bg-base-200;
+}
+
+#content blockquote > p {
+    @apply mb-0;
+}

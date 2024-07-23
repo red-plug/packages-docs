@@ -7,5 +7,31 @@ export default defineNuxtConfig({
     },
     lodash: {
         prefix: '_'
+    },
+    app: {
+        head: {
+            meta: [
+                {
+                    name: 'robots',
+                    content: 'noindex'
+                },
+
+            ]
+        }
+    },
+    content: {
+        highlight: {
+            theme: 'github-dark',
+            langs: [
+                'js',
+                'json',
+                'html',
+                'php',
+                'sql',
+                'vue-html',
+                'vue',
+                'bash'
+            ]
+        }
     }
 })
