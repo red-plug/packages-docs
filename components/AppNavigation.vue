@@ -29,7 +29,7 @@ interface ChildNavLink {
 }
 
 interface NavLink extends ChildNavLink {
-    group: "Framework" | "Plugin",
+    group: "Framework" | "Módulo" | "Sistema",
     child: ChildNavLink[]
 }
 
@@ -44,13 +44,21 @@ const links: NavLink[] = [
             {
                 display: "Crear plugins",
                 navigate: "/create-plugins",
+            },
+            {
+                display: "Filament Resource",
+                navigate: "/resource"
+            },
+            {
+                display: "Filament Page",
+                navigate: "/page"
             }
         ]
     },
     {
         display: "CMS",
         navigate: "/cms",
-        group: "Framework",
+        group: "Sistema",
         child: [
 
         ]
@@ -58,7 +66,7 @@ const links: NavLink[] = [
     {
         display: "Ecommerce",
         navigate: "/ecommerce",
-        group: "Framework",
+        group: "Sistema",
         child: [
 
         ]
@@ -66,7 +74,7 @@ const links: NavLink[] = [
     {
         display: "Action Logger",
         navigate: "/action-logger",
-        group: "Plugin",
+        group: "Framework",
         child: [
 
         ]
@@ -74,7 +82,7 @@ const links: NavLink[] = [
     {
         display: "API Builder",
         navigate: "/api-builder",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -82,7 +90,7 @@ const links: NavLink[] = [
     {
         display: "Developer Panel",
         navigate: "/developer-panel",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -90,7 +98,7 @@ const links: NavLink[] = [
     {
         display: "Image Optimizer",
         navigate: "/image-optimizer",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -98,7 +106,7 @@ const links: NavLink[] = [
     {
         display: "Lang Manager",
         navigate: "/lang-manager",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -106,7 +114,7 @@ const links: NavLink[] = [
     {
         display: "Model Schema",
         navigate: "/model-schema",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -114,7 +122,7 @@ const links: NavLink[] = [
     {
         display: "Panel Tenacy",
         navigate: "/panel-tenacy",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -122,7 +130,7 @@ const links: NavLink[] = [
     {
         display: "Permission Manager",
         navigate: "/permission-manager",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -130,7 +138,7 @@ const links: NavLink[] = [
     {
         display: "Query Boost",
         navigate: "/query-boost",
-        group: "Plugin",
+        group: "Framework",
         child: [
             
         ]
@@ -138,7 +146,71 @@ const links: NavLink[] = [
     {
         display: "Stylist",
         navigate: "/stylist",
-        group: "Plugin",
+        group: "Framework",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Roles",
+        navigate: "/roles",
+        group: "Módulo",
+        child: [
+
+        ]
+    },
+    {
+        display: "Admins",
+        navigate: "/admins",
+        group: "Módulo",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Layouts",
+        navigate: "/layouts",
+        group: "Módulo",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Media",
+        navigate: "/media",
+        group: "Módulo",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Contents",
+        navigate: "/contents",
+        group: "Módulo",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Comments",
+        navigate: "/comments",
+        group: "Módulo",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Readers",
+        navigate: "/readers",
+        group: "Módulo",
+        child: [
+            
+        ]
+    },
+    {
+        display: "Subscriptions",
+        navigate: "/subscriptions",
+        group: "Módulo",
         child: [
             
         ]

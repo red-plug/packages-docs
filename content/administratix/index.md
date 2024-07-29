@@ -1,3 +1,8 @@
+---
+title: ' | Red Plug'
+description: 'Aprende a usar '
+---
+
 # Administratix
 
 ## Requerimientos
