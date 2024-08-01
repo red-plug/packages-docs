@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#content .mockup-code {
+    @apply text-xs;
+}
+
 #content h1 {
     @apply text-3xl md:text-5xl font-semibold mb-6;
 }

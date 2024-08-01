@@ -1,5 +1,5 @@
 ---
-title: ' | Red Plug'
+title: 'Administratix | Red Plug'
 description: 'Aprende a usar '
 ---
 
