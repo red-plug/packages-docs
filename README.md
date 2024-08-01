@@ -1,42 +1,6 @@
-# Content v2 Minimal Starter
+# Package Docs
 
-Look at the [Content documentation](https://content.nuxt.com/) to learn more.
+Package docs es el repositorio de la documentación oficial de los plugins de la organización __Red Plug__ aquí encontrarás todo lo necesario para aprender a crear plugins, encontrar plugins que te sirvan en tu aplicación   
 
-## Setup
 
-Make sure to install the dependencies:
-
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Checkout the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## [SOY UN LINK ENORME A LA DOCUMENTACIÓN, VAMOS AMIGO HAZ CLICK EN MI, NO LO PIENSES MÁS SOLO HAZ CLICK...](https://red-plug.github.io/packages-docs/)
