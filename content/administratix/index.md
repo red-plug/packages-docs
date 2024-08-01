@@ -46,7 +46,7 @@ Una vez instalado el paquete, corre el siguiente comando
 
 ::code-mockup{:class="mb-8"}
 ```bash
-php artisan administrator:install
+php artisan administratix:install
 ```
 ::
 
