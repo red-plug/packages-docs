@@ -1240,7 +1240,7 @@ $settings->navigationUrl('...');
 
 ::div{:class="bg-neutral px-2 py-1 mb-2"}
 ```php
-\Closure
+bool|\Closure
 ```
 ::
 
