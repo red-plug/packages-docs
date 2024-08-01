@@ -43,7 +43,7 @@
 }
 
 #content p > a {
-    @apply link link-secondary;
+    @apply link link-secondary break-words;
 }
 
 #content li > a {
@@ -55,7 +55,11 @@
 }
 
 #content p > code {
-    @apply badge badge-sm;
+    @apply badge badge-sm text-ellipsis overflow-x-hidden max-w-full;
+}
+
+#content .bg-neutral {
+    @apply relative overflow-hidden overflow-x-auto max-w-full;
 }
 
 #content table {
