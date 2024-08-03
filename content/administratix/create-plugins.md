@@ -477,6 +477,26 @@ En caso de que tu plugin cuente con componentes de Livewire que no cuenten con f
 ```
 ::
 
+## Permisos de tu plugin
+
+En caso de que tu plugin cuente con enums de permisos provenientes de [PermissionManager](/permission-manager), puedes registrarlos en la propiedad `$permissions` de tu plugin
+
+::code-mockup{:class="mb-8"}
+```php
+<?php
+{
+    /**
+     * The permissions enums array
+     * 
+     * @var array
+     */
+    protected array $permissions = [
+        BrandPermissions::class
+    ];
+}
+```
+::
+
 
 ## Los modelos de tu plugin
 
