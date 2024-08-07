@@ -80,6 +80,14 @@ const links: NavLink[] = [
         ]
     },
     {
+        display: "Pulse",
+        navigate: "/pulse",
+        group: "Framework",
+        child: [
+
+        ]
+    },
+    {
         display: "API Builder",
         navigate: "/api-builder",
         group: "Framework",

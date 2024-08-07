@@ -28,3 +28,8 @@ Después de seleccionar el canal de comunicación deseado verás la siguiente pa
 ![Login Code Step](/developer-panel/login-3.png)
 
 Si el código es correcto te permitirá acceder al panel y a sus funcionalidades.
+
+
+## Pulse
+
+Pulse es una herramienta de monitoreo de aplicación que ofrece distintas métricas, este dashboard esta instalado en el Panel de Desarrollador por defecto, si necesitas más información lee [Pulse](/pulse)
