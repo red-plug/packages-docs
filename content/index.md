@@ -21,7 +21,6 @@ Aquí se encuentran los paquetes que nos ayudan a facilitar, potenciar y dar for
 | [red-plug/developer-panel](/developer-panel) | Ofrece un [panel de Filament](https://filamentphp.com/docs/3.x/panels/getting-started#overview) especializado en acciones típicas de un desarrollador |
 | [red-plug/image-optimizer](/image-optimizer) | Ofrece una API para modificar las imagenes guardadas en el sistema |
 | [red-plug/lang-manager](/lang-manager) | Ofrece herramientas para convertir los contenidos en múltiples idiomas |
-| [red-plug/model-schema](/model-schema) | Ofrece un recurso de Filament que permite visualizar los casts, defaults y relaciones de un modelo proveniente de plugns de __Red Plug__ |
 | [red-plug/panel-tenacy](/panel-tenacy) | Permite relacionar registros de base de datos a un panel, permitiendo tener múltiples paneles de Filament con registros independientes |
 | [red-plug/permission-manager](/permission-manager) | Permite gestionar y estandarizar permisos en los plugins |
 | [red-plug/query-boost](/query-boost) | Ofrece scopes y extensiones de query para facilitar el trabajo con queries |

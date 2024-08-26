@@ -1,6 +1,6 @@
 ---
 title: 'Administratix | Red Plug'
-description: 'Aprende a usar '
+description: 'Aprende acerca del framework principal de Red Plug'
 ---
 
 # Administratix

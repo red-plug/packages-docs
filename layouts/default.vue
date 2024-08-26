@@ -4,6 +4,7 @@
         <div class="drawer-content">
             <AppHeader />
             <div class="container mx-auto py-3 lg:py-8 p-2 sm:p-4 md:p-8" id="content">
+                <PageNavigation />
                 <slot />
             </div>
 

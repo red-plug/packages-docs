@@ -1,6 +1,6 @@
 ---
 title: 'Developer Panel | Red Plug'
-description: 'Aprende a usar '
+description: 'Usa este panel especializado en debug para gestionar tu proyecto'
 ---
 
 # Developer Panel

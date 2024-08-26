@@ -1,6 +1,6 @@
 ---
 title: ' Administratix | Plugins | Red Plug'
-description: 'Aprende a usar '
+description: 'Aprende a crear plugins de la organización'
 ---
 
 # Crear plugins

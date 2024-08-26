@@ -120,14 +120,6 @@ const links: NavLink[] = [
         ]
     },
     {
-        display: "Model Schema",
-        navigate: "/model-schema",
-        group: "Framework",
-        child: [
-            
-        ]
-    },
-    {
         display: "Panel Tenacy",
         navigate: "/panel-tenacy",
         group: "Framework",
