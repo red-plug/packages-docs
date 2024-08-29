@@ -12,7 +12,7 @@ Laravel Pulse es una herramienta de motinoreo creada por los desarrolladores de 
 
 ## Instalación
 
-Pulse se intala autómaticamente junto con [Adminsitratix](/administratix) por lo que no requires correr ningún otro comando
+Pulse se instala autómaticamente junto con [Adminsitratix](/administratix) por lo que no requires correr ningún otro comando
 
 ## Uso
 

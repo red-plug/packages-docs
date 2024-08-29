@@ -42,6 +42,10 @@
     @apply list-disc list-inside;
 }
 
+#context ol > li {
+    @apply list-decimal list-inside;
+}
+
 #content p > a {
     @apply link link-secondary break-words;
 }

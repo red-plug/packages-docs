@@ -10,7 +10,7 @@ Panel tenacy es un plugin que te ayuda a mantener tus registros de base de datos
 
 ## Instalación
 
-Panel Tenacy se intala autómaticamente junto con [Adminsitratix](/administratix) por lo que no requires correr ningún otro comando
+Panel Tenacy se instala autómaticamente junto con [Adminsitratix](/administratix) por lo que no requires correr ningún otro comando
 
 ## Uso
 
