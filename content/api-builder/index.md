@@ -195,13 +195,13 @@ En caso que las configuraciones de un API schema proveido por plugins no cumpla 
 
 use RedPlug\Administratix\Plugins\ApiBuilder\ApiBuilderPlugin;
 use RedPlug\Administratix\Plugins\Brands\BrandsPlugin;
-use RedPlug\Administratix\Plugins\ApiBuilder\Support\ApiSchemaSettings;
+use RedPlug\Administratix\Plugins\ApiBuilder\Support\ApiResourceSettings;
 
 ->id('admin')
 ->path('admin')
 ->plugins([
     BrandsPlugin::make()
-            ->configureApiResourceUsing('brands', function(ApiSchemaSettings $apiSchemaSettings): void {
+            ->configureApiResourceUsing('brands', function(ApiResourceSettings $apiSchemaSettings): void {
                             $apiSchemaSettings->appendFields([
                                 Str::make('description')
                             ]);
@@ -299,9 +299,79 @@ class BrandSchema extends Schema
 
 esto te permitirá en tus consultas aplicar la búsqueda:
 
-
 ::code-mockup{:class="mb-8"}
 ```
 /admin/api/brands?filter[search]=Texto+de+búsqueda
+```
+::
+
+En caso de que estes escribiendo un plugin solo agregalo al apartado de `$modelIndexes` de tu plugin:
+
+
+::code-mockup{:class="mb-8"}
+```php
+
+class MyPlugin extends BasePlugin
+{
+    /**
+     * The models for register into config meilisearch
+     * 
+     * @var array<int, string>
+     */
+    protected array $modelIndexes = [
+        Brand::class
+    ];
+}
+```
+::
+## Escribir documentación de api
+
+
+Recuerda que como programador de APIs es necesario documentar nuestros endpoints, esto es bastante sencillo y todo sin tener que abandonar el código, aunque la mayoría de las veces API Builder es capaz de autodocumentar tu schema, siempre puedes configurarlo a tu gusto en el método setUp de tu schema:
+
+
+::code-mockup{:class="mb-8"}
+```php
+
+use RedPlug\Administratix\Plugins\ApiBuilder\Support\Docs\EndpointDoc;
+use RedPlug\Administratix\Plugins\ApiBuilder\Support\Docs\QueryParamDoc;
+use RedPlug\Administratix\Plugins\ApiBuilder\Support\Docs\BodyParamDoc;
+use RedPlug\Administratix\Plugins\ApiBuilder\Support\Docs\HeaderParamDoc;
+use RedPlug\Administratix\Plugins\ApiBuilder\Enums\DataType;
+
+public static function setUp(ApiResourceSettings $apiSchemaDefaults): ApiResourceSettings
+{
+    return $apiSchemaDefaults->endpointDocs([
+        'index' => EndpointDoc::make('index')
+                            ->queryParams([
+                                QueryParamDoc::make('filter[name]')
+                                            ->description('Filtra las marcas mediante su nombre aplicando un = operador')
+                                            ->dataType(DataType::String)
+                                            ->values([
+                                                'value1',
+                                                'value2'
+                                            ])
+                            ])
+                            ->bodyParams([
+                                BodyParamDoc::make('filter[name]')
+                                            ->description('Filtra las marcas mediante su nombre aplicando un = operador')
+                                            ->dataType(DataType::String)
+                                            ->values([
+                                                'value1',
+                                                'value2'
+                                            ])
+                            ])
+                            ->headerParams([
+                                HeaderParamDoc::make('filter[name]')
+                                            ->description('Filtra las marcas mediante su nombre aplicando un = operador')
+                                            ->dataType(DataType::String)
+                                            ->values([
+                                                'value1',
+                                                'value2'
+                                            ])
+                            ]);
+    ]);
+
+}
 ```
 ::
