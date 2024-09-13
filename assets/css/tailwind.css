@@ -77,3 +77,8 @@
 #content blockquote > p {
     @apply mb-0;
 }
+
+
+#content img {
+    @apply rounded-md;
+}
